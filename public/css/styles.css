@@ -48,5 +48,62 @@ footer span{
     font-weight: bold;
     color: orange;
 }
+.auth-container{
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2{
+    margin-bottom: 1em;
+    color: #fff;
+    border-left: 4px solid orange;
+    padding:0.3em;
+    width: 100px;
+}
+.auth-container a{
+    color:orange;
+}
+.form-control{
+    display: flex;
+    flex-direction: colunm;
+    margin-bottom: 1em;
+}
+.form-control label{
+    font-weight: bold;
+    margin-bottom:0.5em;
+}
+.form-control input, 
+.form-control textarea{
+    width: 250px;
+    margin-top: -5px;
+    margin-left: 7px;
+    padding: 7px;
+}
+.form-control input {
+    background: #222;
+    border: 1px solid orange;
+}
+form input[type="submit"],
+.btn{
+    background-color: transparent;
+    color: orange;
+    border: 2px solid orange;
+    padding: 0.5em 1.2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+form input[type="submit"]:hover,
+.btn:hover{
+    background-color: orange;
+    color: #fff;
+}
+
 
 
