@@ -15,6 +15,8 @@ const User = require('./models/User.js')
 
 //import
 const toughtsRoutes = require('./routes/toughtsRoutes.js')
+const authRoutes = require('./routes/authRoutes.js')
+const AuthController = require('./controllers/AuthController.js')
 const ToughtController = require('./controllers/ToughtController.js')
 
 
@@ -73,8 +75,12 @@ app.use((req,res,next) => {
 
 //Router 
 app.use('/toughts', toughtsRoutes)
+app.use('/login', authRoutes)
+app.use('/register', authRoutes)
 
 app.get('/', ToughtController.showToughts)
+app.get('/login', AuthController.login)
+app.get('/register', AuthController.register)
 
 conn 
 //.sync({force:true})
