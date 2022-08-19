@@ -105,5 +105,16 @@ form input[type="submit"]:hover,
     color: #fff;
 }
 
+.message{
+    padding:1em;
+    color:blue;
+    background: #fff;
+    border:1px  solid aqua;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 2em;
+    max-width: 60%;
+}
+
 
 

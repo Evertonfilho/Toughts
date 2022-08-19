@@ -76,7 +76,6 @@ app.use((req,res,next) => {
 //Router 
 app.use('/toughts', toughtsRoutes)
 app.use('/', authRoutes)
-app.use('/', authRoutes)
 
 app.get('/', ToughtController.showToughts)
 app.get('/login', AuthController.login)
